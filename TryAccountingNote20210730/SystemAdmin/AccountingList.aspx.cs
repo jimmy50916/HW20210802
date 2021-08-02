@@ -44,6 +44,21 @@ namespace AccountingNote.SystemAdmin
                 this.gvAccountingList.Visible = false;
                 this.plcNoData.Visible = true;
             }
+            int TotalAmount = 0;
+            foreach (DataRow dr in dt.Rows)
+            {
+                if (dr["ActType"].ToString() == "1")
+                {
+                    TotalAmount += Convert.ToInt32(dr["Amount"]);
+                }
+                else
+                {
+                    TotalAmount -= Convert.ToInt32(dr["Amount"]);
+
+                }
+            }
+
+            this.lblTotalAmount.Text = TotalAmount.ToString() + "元";
         }
 
         protected void btnCreate_Click(object sender, EventArgs e)

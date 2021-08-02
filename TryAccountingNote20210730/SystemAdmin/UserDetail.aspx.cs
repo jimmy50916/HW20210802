@@ -45,6 +45,10 @@ namespace TryAccountingNote20210730.SystemAdmin
                     this.ddlUserLevel.Enabled = false;
 
                     string idText = this.Request.QueryString["UID"];
+                    if (currentUser.ID != idText)
+                    {
+                        this.btnEditUserPassword.Visible = false;
+                    }
                     if (UserInfoManager.GetUserInfoByUID(idText).ToString() != string.Empty)
                     {
                         var drUserInfo = UserInfoManager.GetUserInfoByUID(idText);
@@ -138,7 +142,7 @@ namespace TryAccountingNote20210730.SystemAdmin
         }
         protected void btnEditUserPassword_Click(object sender, EventArgs e)
         {
-            Response.Redirect($"/SystemAdmin/UserPassword.aspx?UID={this.Request.QueryString.ToString()}");
+            Response.Redirect($"/SystemAdmin/UserPassword.aspx?{this.Request.QueryString.ToString()}");
         }
         private bool CheckInput(out List<string> errorMsgList)
         {

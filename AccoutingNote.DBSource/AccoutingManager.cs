@@ -281,6 +281,126 @@ namespace AccountingNote.Auth
             }
         }
 
+        public static DataTable GetUserListBuildTime(string ID)
+        {
+            string connStr = DBHelper.GetConnectionString();
+            string dbCommand =
+                $@" SELECT 
+                        ID,
+                        Account,
+                        Name,
+                        Email,
+                        UserLevel,
+                        CreateDate
+                    FROM UserInfo
+                    ORDER BY CreateDate DESC
+                ";
+
+            List<SqlParameter> list = new List<SqlParameter>();
+            list.Add(new SqlParameter("@id", ID));
+
+            try
+            {
+                return DBHelper.ReadDataTable(connStr, dbCommand, list);
+            }
+            catch (Exception ex)
+            {
+                Logger.WriteLog(ex);
+                return null;
+            }
+        }
+
+        public static DataRow GetFirstAccounting()
+        {
+            string connStr = DBHelper.GetConnectionString();
+            string dbCommand =
+            $@"SELECT TOP(1)  CreateDate
+               FROM Accounting
+               ORDER BY ID ASC
+                ";
+
+            List<SqlParameter> list = new List<SqlParameter>();
+
+
+            try
+            {
+                return DBHelper.ReadDataRow(connStr, dbCommand, list);
+            }
+            catch (Exception ex)
+            {
+                Logger.WriteLog(ex);
+                return null;
+            }
+
+        }
+
+        public static DataRow GetLastAccounting()
+        {
+            string connStr = DBHelper.GetConnectionString();
+            string dbCommand =
+            $@"SELECT TOP(1)  CreateDate
+               FROM Accounting
+               ORDER BY ID DESC
+                ";
+
+            List<SqlParameter> list = new List<SqlParameter>();
+
+            try
+            {
+                return DBHelper.ReadDataRow(connStr, dbCommand, list);
+            }
+            catch (Exception ex)
+            {
+                Logger.WriteLog(ex);
+                return null;
+            }
+
+        }
+
+        public static DataRow GetAccountingQuantity()
+        {
+            string connStr = DBHelper.GetConnectionString();
+            string dbCommand =
+            $@"SELECT COUNT(*)as 'AccoutingCount'
+               FROM Accounting
+                ";
+
+            List<SqlParameter> list = new List<SqlParameter>();
+
+            try
+            {
+                return DBHelper.ReadDataRow(connStr, dbCommand, list);
+            }
+            catch (Exception ex)
+            {
+                Logger.WriteLog(ex);
+                return null;
+            }
+
+        }
+
+        public static DataRow GetUserQuantity()
+        {
+            string connStr = DBHelper.GetConnectionString();
+            string dbCommand =
+            $@"SELECT COUNT(*)as 'UserCount'
+               FROM Userinfo
+                ";
+
+            List<SqlParameter> list = new List<SqlParameter>();
+
+            try
+            {
+                return DBHelper.ReadDataRow(connStr, dbCommand, list);
+            }
+            catch (Exception ex)
+            {
+                Logger.WriteLog(ex);
+                return null;
+            }
+
+        }
+
 
     }
 }

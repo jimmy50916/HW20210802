@@ -25,8 +25,9 @@
                 </td>
                 <td>
                     <!--這裡放主要內容-->
-                    <asp:Button ID="btnCreate" runat="server" Text="Add Accounting" OnClick="btnCreate_Click" />
-
+                    <asp:Button ID="btnCreate" runat="server" Text="Add Accounting" OnClick="btnCreate_Click"  />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="lblTotalAmount" runat="server"></asp:Label>
                     <asp:GridView ID="gvAccountingList" runat="server" AutoGenerateColumns="false" OnRowDataBound="gvAccountingList_RowDataBound">
                         <Columns>
                             <asp:BoundField HeaderText="標題" DataField="Caption" />
@@ -47,7 +48,7 @@
                         </Columns>
                     </asp:GridView>
 
-                    <asp:PlaceHolder ID="plcNoData" runat="server" Visible="false">
+                    <asp:PlaceHolder ID="plcNoData" runat="server" Visible="false"> 
                         <p style="color: red; background-color: cornflowerblue">
                             No data in your Accounting Note.
                        

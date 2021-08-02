@@ -33,6 +33,15 @@ namespace TryAccountingNote20210730.SystemAdmin
         protected global::System.Web.UI.WebControls.TextBox txtPWD;
 
         /// <summary>
+        /// txtCheckPWD 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtCheckPWD;
+
+        /// <summary>
         /// txtNewPWD 控制項。
         /// </summary>
         /// <remarks>
@@ -42,13 +51,13 @@ namespace TryAccountingNote20210730.SystemAdmin
         protected global::System.Web.UI.WebControls.TextBox txtNewPWD;
 
         /// <summary>
-        /// txtCheckPWD 控制項。
+        /// txtChecknewPWD 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCheckPWD;
+        protected global::System.Web.UI.WebControls.TextBox txtChecknewPWD;
 
         /// <summary>
         /// btnChangePWD 控制項。

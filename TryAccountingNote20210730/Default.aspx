@@ -19,21 +19,22 @@
                     <ul>
                         <li>
                             <p>初次記帳時間</p>
-                            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="txtFirstaccount" runat="server"></asp:TextBox>
                         </li>
                         <li>
                             <p>最後記帳時間</p>
-                            <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="txtLastaccount" runat="server"></asp:TextBox>
                         </li>
                         <li>
                             <p>計帳數量</p>
-                            <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="txtAccountquantity" runat="server"></asp:TextBox>
                         </li>
                         <li>
                             <p>會員數</p>
-                            <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="txtUserquantity" runat="server"></asp:TextBox>
                         </li>
                     </ul>
+
                 </td>
             </tr>
             <tr>

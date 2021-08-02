@@ -12,7 +12,15 @@ namespace TryAccountingNote20210730.SystemAdmin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            this.TextBox1.Text = AccountingManager.GetNewestAccounting()["CreateDate"].ToString();
+            this.txtAccountquantity.Enabled = false;
+            this.txtFirstaccount.Enabled = false;
+            this.txtLastaccount.Enabled = false;
+            this.txtUserquantity.Enabled = false;
+            this.txtFirstaccount.Text = AccountingManager.GetFirstAccounting()["CreateDate"].ToString();
+            this.txtLastaccount.Text = AccountingManager.GetLastAccounting()["CreateDate"].ToString();
+            this.txtAccountquantity.Text = AccountingManager.GetAccountingQuantity()["AccoutingCount"].ToString();
+            this.txtUserquantity.Text = AccountingManager.GetUserQuantity()["UserCount"].ToString();
+
         }
     }
 }

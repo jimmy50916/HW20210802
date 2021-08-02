@@ -11,18 +11,20 @@
     <form id="form1" runat="server">
         <div>
             <h1>流水帳管理系統</h1>
-            <a href="Login.aspx">登入</a>
         </div>
         
         <%--<asp:PlaceHolder runat="server" ID="plcChangePWD" Visible="false">--%>
             Password:
             <asp:TextBox ID="txtPWD" runat="server"  TextMode="Password"></asp:TextBox>
             <br />
+            Check Password:
+            <asp:TextBox ID="txtCheckPWD" runat="server"  TextMode="Password"></asp:TextBox>
+            <br />
             NewPassword:
             <asp:TextBox ID="txtNewPWD" runat="server"  TextMode="Password" ></asp:TextBox>
             <br />
-            Check your Password
-            <asp:TextBox ID="txtCheckPWD" runat="server" TextMode="Password"></asp:TextBox><br />
+            Check your New Password
+            <asp:TextBox ID="txtChecknewPWD" runat="server" TextMode="Password"></asp:TextBox><br />
             <asp:Button ID="btnChangePWD" runat="server" Text="Change password" OnClick="ChangePWD_Click"/><br />
             <asp:Literal ID="ltlMsgPWD" runat="server"></asp:Literal>
        <%-- </asp:PlaceHolder>--%>
@@ -30,3 +32,4 @@
     </form>
 </body>
 </html>
+

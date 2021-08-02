@@ -31,7 +31,7 @@ namespace TryAccountingNote20210730.SystemAdmin
             }
 
             // read userinfo data
-            var dt = AccountingManager.GetUserList(currentUser.ID);
+            var dt = AccountingManager.GetUserListBuildTime(currentUser.ID);
 
             if (dt.Rows.Count > 0)  // check is empty data
             {
@@ -42,11 +42,39 @@ namespace TryAccountingNote20210730.SystemAdmin
             {
                 this.gvAccountingList.Visible = false;
             }
+
+
         }
 
         protected void btnCreate_Click(object sender, EventArgs e)
         {
             Response.Redirect("/SystemAdmin/UserDetail.aspx");
+        }
+
+        protected void gvAccountingList_RowDataBound(object sender, GridViewRowEventArgs e)
+        {
+            var row = e.Row;
+
+            if (row.RowType == DataControlRowType.DataRow)
+            {
+                //Literal ltl = row.FindControl("ltActType") as Literal;
+                Label lbl = row.FindControl("lblUserLevel") as Label;
+
+                var dr = row.DataItem as DataRowView;
+                int actType = dr.Row.Field<int>("UserLevel");
+
+                if (actType == 0)
+                {
+                    //ltl.Text = "支出";
+                    lbl.Text = "管理者";
+                }
+                else
+                {
+                    //ltl.Text = "收入";
+                    lbl.Text = "一般會員";
+                }
+
+            }
         }
 
     }
