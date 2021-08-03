@@ -1,8 +1,8 @@
 ﻿<%@ Page Title="UserList" Language="C#" AutoEventWireup="true" MasterPageFile="SystemAdmin.Master" CodeBehind="UserList.aspx.cs" Inherits="TryAccountingNote20210730.SystemAdmin.UserList" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="cphContent" runat="server">
-    <!--這裡放主要內容-->
     <h3>會員管理</h3>
+    <!--這裡放主要內容-->
     <asp:Button ID="btnCreate" runat="server" Text="Add Accounting" OnClick="btnCreate_Click" />
     <asp:GridView ID="gvAccountingList" runat="server" AutoGenerateColumns="false" OnRowDataBound="gvAccountingList_RowDataBound">
         <Columns>

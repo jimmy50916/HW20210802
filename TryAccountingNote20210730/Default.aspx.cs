@@ -18,8 +18,8 @@ namespace TryAccountingNote20210730.SystemAdmin
             this.txtUserquantity.Enabled = false;
             this.txtFirstaccount.Text = AccountingManager.GetFirstAccounting()["CreateDate"].ToString();
             this.txtLastaccount.Text = AccountingManager.GetLastAccounting()["CreateDate"].ToString();
-            this.txtAccountquantity.Text = AccountingManager.GetAccountingQuantity()["AccoutingCount"].ToString();
-            this.txtUserquantity.Text = AccountingManager.GetUserQuantity()["UserCount"].ToString();
+            this.txtAccountquantity.Text = "共 "+AccountingManager.GetAccountingQuantity()["AccoutingCount"].ToString()+" 筆";
+            this.txtUserquantity.Text = "共 "+AccountingManager.GetUserQuantity()["UserCount"].ToString()+" 人";
 
         }
     }

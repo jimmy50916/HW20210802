@@ -9,9 +9,9 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-            <h1>流水帳管理系統</h1>
-            <a href="Login.aspx">登入</a>
+        <div style="background-color: #CCFFFF">
+            <h1>流水帳管理系統&nbsp;
+            <a href="Login.aspx" style="font-size: 20px">登入系統</a></h1>
         </div>
         <table>
             <tr>

@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="UserPasswordPage" Language="C#" AutoEventWireup="true" MasterPageFile="SystemAdmin.Master" CodeBehind="UserPassword.aspx.cs" Inherits="TryAccountingNote20210730.SystemAdmin.UserPassword" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="cphContent" runat="server">
+    <h3>會員管理</h3>
     Password:
     <asp:TextBox ID="txtPWD" runat="server"  TextMode="Password"></asp:TextBox>
     <br />

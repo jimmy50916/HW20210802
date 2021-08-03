@@ -10,7 +10,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <h1>流水帳管理系統</h1>
+            <h1 style="background-color: #CCFFFF">流水帳管理系統</h1>
         </div>
         <asp:PlaceHolder runat="server" ID="plcLogin" Visible="false">
             Account:

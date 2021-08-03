@@ -7,24 +7,37 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 753px;
+        }
+        .auto-style2 {
+            width: 118px;
+        }
+        .auto-style3 {
+            width: 787px;
+        }
+    </style>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <table>
+    <form id="form1" runat="server" style="width:100%">
+        <table  style="width=100%;padding:10px;">
             <tr>
                 <td colspan="2">
-                    <h1 style="color:brown">流水帳管理系統 - 後台</h1>
+                    <h1 style="color:brown; text-align: right; padding-right: 0px;" class="auto-style1">流水帳管理系統 - 後台</h1>
                 </td>
             </tr>
             <tr>
-               <td>
+               <td style="vertical-align:top;padding:20px;line-height:24px; background-color: #CCFFCC;" class="auto-style2">
+                   
                     <a href="UserInfo.aspx">使用者資訊</a>
                     <br />
                     <a href="AccountingList.aspx">流水帳管理 </a>
                     <br />
                     <a href="UserList.aspx">會員管理</a>
+                  
                 </td>
-                <td>
+                <td style="padding:20px" class="auto-style3">
                     <!--這裡放主要內容-->
                     <asp:ContentPlaceHolder ID="cphContent" runat="server"></asp:ContentPlaceHolder>
                 </td>

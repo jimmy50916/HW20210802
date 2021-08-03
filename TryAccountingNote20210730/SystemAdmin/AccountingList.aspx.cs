@@ -58,7 +58,7 @@ namespace AccountingNote.SystemAdmin
                 }
             }
 
-            this.lblTotalAmount.Text = TotalAmount.ToString() + "元";
+            this.lblTotalAmount.Text ="小計  "+ TotalAmount.ToString() + "元";
         }
 
         protected void btnCreate_Click(object sender, EventArgs e)

@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="AccountingDetailPage" Language="C#" AutoEventWireup="true" MasterPageFile="SystemAdmin.Master" CodeBehind="AccountingDetail.aspx.cs" Inherits="AccountingNote.SystemAdmin.AccountingDetail" %>
 
 <asp:Content ID ="Content1" ContentPlaceHolderID ="cphContent" runat="server">
+        <h3>流水帳管理</h3>
         <!--這裡放主要內容-->
         Type: 
             <asp:DropDownList ID="ddlActType" runat="server">

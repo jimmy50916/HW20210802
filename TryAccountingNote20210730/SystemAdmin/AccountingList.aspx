@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="AccountingListPage" Language="C#" AutoEventWireup="true" MasterPageFile="SystemAdmin.Master" CodeBehind="AccountingList.aspx.cs" Inherits="AccountingNote.SystemAdmin.AccountingList" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="cphContent" runat="server">
+    <h3>流水帳管理</h3>
     <!--這裡放主要內容-->
     <asp:Button ID="btnCreate" runat="server" Text="Add Accounting" OnClick="btnCreate_Click" />
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
