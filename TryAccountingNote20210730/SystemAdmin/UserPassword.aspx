@@ -1,4 +1,4 @@
-﻿<%@ Page  Language="C#" AutoEventWireup="true" MasterPageFile="SystemAdmin.Master" CodeBehind="UserPassword.aspx.cs" Inherits="TryAccountingNote20210730.SystemAdmin.UserPassword" %>
+﻿<%@ Page Title="UserPasswordPage" Language="C#" AutoEventWireup="true" MasterPageFile="SystemAdmin.Master" CodeBehind="UserPassword.aspx.cs" Inherits="TryAccountingNote20210730.SystemAdmin.UserPassword" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="cphContent" runat="server">
     Password:

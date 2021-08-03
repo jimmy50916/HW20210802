@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="SystemAdmin.Master" CodeBehind="UserList.aspx.cs" Inherits="TryAccountingNote20210730.SystemAdmin.UserList" %>
+﻿<%@ Page Title="UserList" Language="C#" AutoEventWireup="true" MasterPageFile="SystemAdmin.Master" CodeBehind="UserList.aspx.cs" Inherits="TryAccountingNote20210730.SystemAdmin.UserList" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="cphContent" runat="server">
     <!--這裡放主要內容-->
