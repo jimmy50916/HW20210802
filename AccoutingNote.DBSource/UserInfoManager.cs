@@ -120,7 +120,7 @@ namespace AccountingNote.Auth
                     (
                         NEWID()
                         ,@userAcc
-                        ,'0000'
+                        ,'12345'
                         ,@userName
                         ,@userEmail
                         ,@userLevel
