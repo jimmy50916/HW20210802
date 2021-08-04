@@ -9,6 +9,7 @@
     <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
     <style type="text/css">
         .auto-style1 {
+
             width: auto;
             background-color:mediumturquoise;
         }
@@ -25,14 +26,14 @@
 </head>
 <body>
     <form id="form1" runat="server" style="width:100%">
-        <table  style="width=100%;padding:10px;">
+        <table  style="width:100%;padding:10px; align-content:center; vertical-align:central; " border="1"  >
             <tr>
                 <td colspan="2">
                     <h1 style="color:brown; text-align:center; padding-right: 0px;" class="auto-style1">流水帳管理系統 - 後台</h1>
                 </td>
             </tr>
             <tr>
-               <td style="vertical-align:top;padding:20px;line-height:24px; background-color: #CCFFCC;" class="auto-style2">
+               <td style="vertical-align:top;padding:20px;line-height:24px; background-color: #CCFFCC; width:10%;" class="auto-style2" ">
                    
                     <a href="UserInfo.aspx">使用者資訊</a>
                     <br />
@@ -41,7 +42,7 @@
                     <a href="UserList.aspx">會員管理</a>
                   
                 </td>
-                <td style="padding:20px" class="auto-style3">
+                <td style="padding:20px; width:85%;" class="auto-style3">
                     <!--這裡放主要內容-->
                     <asp:ContentPlaceHolder ID="cphContent" runat="server" ></asp:ContentPlaceHolder>
                 </td>
