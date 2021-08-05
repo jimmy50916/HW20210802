@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="AccountingNote.Login" %>
+﻿<%@ Page Title="登入頁面" Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="AccountingNote.Login" %>
 
 <!DOCTYPE html>
 
@@ -9,10 +9,10 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <div style="align-content:center">
             <h1 style="background-color: #CCFFFF">流水帳管理系統</h1>
         </div>
-        <asp:PlaceHolder runat="server" ID="plcLogin" Visible="false">
+        <asp:PlaceHolder runat="server" ID="plcLogin" Visible="false" >
             Account:
             <asp:TextBox ID="txtAccount" runat="server"></asp:TextBox>
             <br />

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="TryAccountingNote20210730.SystemAdmin.Default" %>
+﻿<%@ Page Title="流水帳系統" Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="TryAccountingNote20210730.SystemAdmin.Default" %>
 
 <!DOCTYPE html>
 
