@@ -6,16 +6,19 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
+    <style>
+        
+    </style>
 </head>
-<body>
+<body style="background-color:paleturquoise">
     <form id="form1" runat="server">
-        <div style="background-color: #CCFFFF">
-            <h1>流水帳管理系統&nbsp;
+        <div style="background-color: #CCFFFF;text-align:center">
+            <h1>流水帳管理系統 <br/>
             <a href="Login.aspx" style="font-size: 20px">登入系統</a></h1>
         </div>
-        <table>
+        <table align="center">
             <tr>
-                <td>
+                <td >
                     <ul>
                         <li>
                             <p>初次記帳時間</p>

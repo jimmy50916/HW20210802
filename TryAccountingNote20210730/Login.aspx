@@ -7,20 +7,21 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
 </head>
-<body>
+<body style="background-color:paleturquoise">
     <form id="form1" runat="server">
-        <div style="align-content:center">
+        <div style="text-align: center">
             <h1 style="background-color: #CCFFFF">流水帳管理系統</h1>
         </div>
-        <asp:PlaceHolder runat="server" ID="plcLogin" Visible="false" >
-            Account:
+        <div align="center">
+            <asp:PlaceHolder runat="server" ID="plcLogin" Visible="false">
+                Account:
             <asp:TextBox ID="txtAccount" runat="server"></asp:TextBox>
-            <br />
-            Password:
+                Password:
             <asp:TextBox ID="txtPWD" runat="server" TextMode="Password"></asp:TextBox><br />
-            <asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click" /><br />
-            <asp:Literal ID="ltlMsg" runat="server"></asp:Literal>
-        </asp:PlaceHolder>
+                <asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click" /><br />
+                <asp:Literal ID="ltlMsg" runat="server"></asp:Literal>
+            </asp:PlaceHolder>
+        </div>
     </form>
 </body>
 </html>

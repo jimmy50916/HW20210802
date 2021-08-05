@@ -21,10 +21,14 @@
         .auto-style3 {
             width: auto;
             background-color:cyan
+        
+        }
+        .div1{
+            align-content:center;
         }
     </style>
 </head>
-<body>
+<body style="background-color:paleturquoise">
     <form id="form1" runat="server" style="width:100%">
         <table  style="width:100%;padding:10px; align-content:center; vertical-align:central; " border="1"  >
             <tr>
